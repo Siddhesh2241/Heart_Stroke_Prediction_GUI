@@ -142,7 +142,12 @@ R6 = Radiobutton(Detail_entry,text="No", variable=exang, value=2,command=selecti
 R5.place(x=387,y=10)
 R6.place(x=430,y=10)
 
-
+###################Combobox####################
+Label(Detail_entry,text="cp: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=50)
+Label(Detail_entry,text="restecg: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=90)
+Label(Detail_entry,text="slope: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=130)
+Label(Detail_entry,text="ca: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=170)
+Label(Detail_entry,text="thal: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=210)
 
 
 
