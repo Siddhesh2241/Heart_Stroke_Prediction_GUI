@@ -83,10 +83,64 @@ Detail_entry.place(x=30,y=450)
 
 ###################radio buttons####################
 Label(Detail_entry,text="sex: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=10)
+Label(Detail_entry,text="fbs: ",font="arial 13",bg=framebg,fg =framefg).place(x=180,y=10)
+Label(Detail_entry,text="exang: ",font="arial 13",bg=framebg,fg =framefg).place(x=335,y=10)
+
+def selection():
+   if gen.get() == 1:
+       Gender = 1
+       return(Gender)
+   
+   elif gen.get() == 2:
+       Gender = 0
+       return(Gender)
+   else:
+       print("Gender")
+   
+
+def selection2():
+    
+   if fbs.get() == 1:
+       Fbs = 1
+       return(Fbs)
+   
+   elif fbs.get() == 2:
+       Fbs = 0
+       return(Fbs)
+   else:
+       print("Fbs")
+
+def selection3():
+   
+   if exang.get() == 1:
+       Exang = 1
+       return(Exang)
+   
+   elif exang.get() == 2:
+       Exang = 0
+       return(Exang)
+   else:
+       print("Exang")
 
 
+gen = IntVar()
+R1 = Radiobutton(Detail_entry, text="Male", variable=gen, value=1,command=selection)
+R2 = Radiobutton(Detail_entry,text="Female", variable=gen, value=2,command=selection)
+R1.place(x=43,y=10)
+R2.place(x=93,y=10)
 
 
+fbs = IntVar()
+R3 = Radiobutton(Detail_entry, text="True", variable=fbs, value=1,command=selection)
+R4 = Radiobutton(Detail_entry,text="False", variable=fbs, value=2,command=selection)
+R3.place(x=213,y=10)
+R4.place(x=263,y=10)
+
+exang = IntVar()
+R5 = Radiobutton(Detail_entry, text="Yes", variable=exang, value=1,command=selection)
+R6 = Radiobutton(Detail_entry,text="No", variable=exang, value=2,command=selection)
+R5.place(x=387,y=10)
+R6.place(x=430,y=10)
 
 
 
