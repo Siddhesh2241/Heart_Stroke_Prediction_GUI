@@ -76,6 +76,25 @@ DOB = IntVar()
 DOB_entry = Entry(Heading_entry,font="arial 20",textvariable=DOB,width=20,bg="#ededed",fg="#222222",bd=0)
 DOB_entry.place(x=450,y=130)
 
+#####################Body Section 4####################
+
+Detail_entry = Frame(roots,width=490,height=260, bg = "#dbe0e3")
+Detail_entry.place(x=30,y=450)
+
+###################radio buttons####################
+Label(Detail_entry,text="sex: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=10)
+
+
+
+
+
+
+
+
+
+
+
+
 
 roots.mainloop()
 
