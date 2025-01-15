@@ -36,7 +36,7 @@ logo = PhotoImage(file = "Images\header.png")
 myimage = Label(image = logo, bg = background)
 myimage.place(x=0,y=0)
 
-##M<<<<<< frame 3 >>>>>>>
+##<<<<<< frame 3 >>>>>>>
 Heading_entry = Frame(roots,width=800,height=190, bg = "#df2d4b")
 Heading_entry.place(x=600,y=20)
 
@@ -130,6 +130,7 @@ R1.place(x=43,y=10)
 R2.place(x=93,y=10)
 
 
+
 fbs = IntVar()
 R3 = Radiobutton(Detail_entry, text="True", variable=fbs, value=1,command=selection)
 R4 = Radiobutton(Detail_entry,text="False", variable=fbs, value=2,command=selection)
@@ -150,10 +151,31 @@ Label(Detail_entry,text="ca: ",font="arial 13",bg=framebg,fg =framefg).place(x=1
 Label(Detail_entry,text="thal: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=210)
 
 
+def selection4():
+   
+  input = cp_combobox.get()
+  if input == '0=typical angina':
+        return0
 
 
 
 
 
+co_combobox = Combobox(Detail_entry,values=['0=typical angina','1=atypica angina','2=non-anginal pain','3=asymptomacit'],font="arial 12",state='r',width=14)
+restecg_combobox = Combobox(Detail_entry,values=['0','1','2'],font="arial 12",state='r',width=11)
+slope_combobox = Combobox(Detail_entry,values=['0 = upsloping','1 = Flat','2 = downsloping'],font="arial 12",state='r',width=12)
+ca_combobox = Combobox(Detail_entry,values=['0','1','2','3','4'],font="arial 12",state='r',width=14)
+thal_combobox = Combobox(Detail_entry,values=['0','1','2','3'],font="arial 12",state='r',width=14)
+
+co_combobox.place(x=50,y=50)
+restecg_combobox.place(x=80,y=90)
+slope_combobox.place(x=70,y=130)
+ca_combobox.place(x=50,y=170)
+thal_combobox.place(x=50,y=210)
+
+
+
+
+###################Data Entry Box####################
 roots.mainloop()
 
