@@ -19,7 +19,7 @@ framefg = "#fefbfb"
 roots = Tk()
 roots.title("Heart stroke prediction")
 roots.geometry("1450x700+60+80")
-roots.resizable(False, False)
+roots.resizable(True, True)
 roots.configure(bg = background)
 
 
@@ -49,14 +49,14 @@ Label(Heading_entry,text="Birth Year",font="arial 13",bg="#df2d4b",fg =framefg).
 Entry_image = PhotoImage(file = "Images\Rounded Rectangle 1.png")
 Entry_image2 = PhotoImage(file = "Images\Rounded Rectangle 2.png")
 
-Label(Heading_entry,image = Entry_image,bg = "#df2d4b").place(x=20,y=30)
-Label(Heading_entry,image = Entry_image,bg = "#df2d4b").place(x=430,y=30)
+Label(Heading_entry,image = Entry_image,bg = "#df2d4b").place(x=10,y=30)
+Label(Heading_entry,image = Entry_image,bg = "#df2d4b").place(x=400,y=30)
 
 Label(Heading_entry,image = Entry_image2,bg = "#df2d4b").place(x=20,y=120)
 Label(Heading_entry,image = Entry_image2,bg = "#df2d4b").place(x=430,y=120)
 
 Registration = IntVar()
-reg_entry = Entry(Heading_entry,font="arial 15",textvariable=Registration,width=30,bg="#0e5363",fg="White",bd=0)
+reg_entry = Entry(Heading_entry,font="arial 15",textvariable=Registration,width=10,bg="#0e5363",fg="White",bd=0)
 reg_entry.place(x=30,y=45)
 
 
@@ -151,11 +151,7 @@ Label(Detail_entry,text="ca: ",font="arial 13",bg=framebg,fg =framefg).place(x=1
 Label(Detail_entry,text="thal: ",font="arial 13",bg=framebg,fg =framefg).place(x=10,y=210)
 
 
-def selection4():
-   
-  input = cp_combobox.get()
-  if input == '0=typical angina':
-        return0
+
 
 
 
